@@ -19,7 +19,7 @@ var config = {
         scripts: 'dist/scripts',
         styles: 'dist/styles'
     },
-    autoprefixer: ['last 2 versions', 'Explorer >= 8', 'Firefox >= 25']
+    autoprefixer: ['last 2 versions', 'Explorer >= 10', 'Firefox >= 25']
 };
 
 gulp.task('styles', function () {
@@ -87,8 +87,7 @@ gulp.task('watch', ['build'], function () {
     gulp.watch(config.dist.base + '/**/*').on('change', browserSync.reload);
 });
 
-gulp.task('build', ['jshint', 'scripts', 'images', 'styles', 'html']);
-
+// deploy to Github Pages
 gulp.task('deploy', ['build'], function() {
     params.message = params.m || params.message;
 
@@ -98,5 +97,7 @@ gulp.task('deploy', ['build'], function() {
     return gulp.src(config.dist.base + '/**/*')
         .pipe($.ghPages(options));
 });
+
+gulp.task('build', ['jshint', 'scripts', 'images', 'styles', 'html']);
 
 gulp.task('default', ['build']);
