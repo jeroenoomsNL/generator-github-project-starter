@@ -27,7 +27,7 @@ gulp.task('styles', function () {
             precision: 10,
             sourcemap: params.production ? false : true,
             style: params.production ? 'compressed' : 'expanded',
-            loadPath: [ 'node_modules' ]
+            loadPath: ['node_modules']
         })
         .on('error', function(error) {
             console.log(error);
@@ -50,13 +50,13 @@ gulp.task('scripts', function () {
     return gulp.src([config.src.scripts + '/**/*.js'])
         .pipe($.plumber())
         .pipe(params.production ? $.uglify() : $.util.noop())
-        .pipe(gulp.dest( config.dist.scripts ))
+        .pipe(gulp.dest(config.dist.scripts))
         .pipe($.size({title: 'scripts'}));
 });
 
 gulp.task('html', function () {
     return gulp.src([config.src.base + '/**/*.html'])
-        .pipe(gulp.dest( config.dist.base ))
+        .pipe(gulp.dest(config.dist.base))
         .pipe($.size({title: 'html'}));
 });
 
@@ -93,15 +93,10 @@ gulp.task('deploy', ['build'], function() {
     params.message = params.m || params.message;
 
     var options = {};
-    options.message = params.message || 'Update '+ new Date();
+    options.message = params.message || 'Update ' + new Date();
 
     return gulp.src(config.dist.base + '/**/*')
         .pipe($.ghPages(options));
 });
 
-
-
-
-
 gulp.task('default', ['build']);
-

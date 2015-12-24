@@ -1,6 +1,14 @@
 # generator-github-project-starter [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > A Yeoman generator for Github Project Starter
 
+
+## Github Project Starter
+
+The Github Project Starter is a boilerplate for Github projects to save time on creating a build process and a demo pages for Github Pages.
+
+Watch this demo page for an example and more info:
+[http://jeroenoomsnl.github.io/github-project-starter](http://jeroenoomsnl.github.io/github-project-starter)
+
 ## Installation
 
 First, install [Yeoman](http://yeoman.io) and generator-github-project-starter using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
@@ -14,6 +22,12 @@ Then generate your new project:
 
 ```bash
 yo github-project-starter
+```
+
+Build your project:
+
+```bash
+gulp
 ```
 
 ## Getting To Know Yeoman
