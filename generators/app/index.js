@@ -2,8 +2,9 @@
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
+var mkdirp = require('mkdirp');
 
-module.exports = yeoman.generators.Base.extend({
+module.exports = yeoman.Base.extend({
   prompting: function () {
     var done = this.async();
 
@@ -45,7 +46,7 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_package.json'),
         this.destinationPath('package.json'),
         {
-          appName: _.underscored(this.appName),
+          appName: this.appName,
           userName: this.userName,
           userEmail: this.userMail
         }
@@ -54,7 +55,7 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('readme.md'),
         this.destinationPath('readme.md'),
         {
-          appName: _.underscored(this.appName)
+          appName: this.appName
         }
       );
       this.fs.copy(
@@ -81,7 +82,7 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function () {
       this.directory('src', 'src');
-      
+
       mkdirp('src/images');
       mkdirp('src/scripts');
       mkdirp('src/styles');
@@ -91,7 +92,7 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('src/index.html'),
         this.destinationPath('src/index.html'),
         {
-          title: this.appName
+          appName: this.appName
         }
       );
 
