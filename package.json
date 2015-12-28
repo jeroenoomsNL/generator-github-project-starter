@@ -30,14 +30,14 @@
     "yosay": "^1.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-eslint": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
     "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.9.0",
-    "gulp-mocha": "^2.0.0",
-    "gulp-nsp": "^2.1.0",
-    "gulp-plumber": "^1.0.0",
-    "yeoman-assert": "^2.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nsp": "^2.2.1",
+    "gulp-plumber": "^1.0.1",
+    "yeoman-assert": "^2.1.1",
     "yeoman-test": "^1.0.0"
   },
   "repository": "https://github.com/jeroenoomsNL/generator-github-project-starter.git",
