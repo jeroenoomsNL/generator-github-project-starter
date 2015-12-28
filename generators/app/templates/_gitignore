@@ -1,4 +1,5 @@
 dist
 node_modules
+.publish
 *.sass-cache
 .DS_Store
