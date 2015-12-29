@@ -30,9 +30,7 @@ describe('generator-github-project-starter:app', function () {
 
   it('copied styles', function() {
     assert.file([
-      'src/styles/helpers/_boilerplate.scss',
       'src/styles/helpers/_breakpoints.scss',
-      'src/styles/helpers/_normalize.scss',
       'src/styles/app.scss',
       'src/styles/demo.scss'
     ]);

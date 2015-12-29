@@ -1,13 +1,18 @@
 # generator-github-project-starter [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > A Yeoman generator for Github Project Starter
 
-
 ## Github Project Starter
 
 The Github Project Starter is a boilerplate for Github projects to save time on creating a build process and a demo pages for Github Pages.
 
 Watch this demo page for an example and more info:
 [http://jeroenoomsnl.github.io/github-project-starter](http://jeroenoomsnl.github.io/github-project-starter)
+
+## Features
+-	Build process with [Gulp](http://gulpjs.com) for html, css, javascript and images
+-	Deploy task for [Github Pages](https://pages.github.com)
+-	Pretty styled and customizable demo page with [initialize.css](http://jeroenoomsnl.github.io/initialize-css/)
+-	And lots of best practices
 
 ## Installation
 
