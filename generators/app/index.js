@@ -102,18 +102,8 @@ module.exports = yeoman.Base.extend({
       );
 
       this.fs.copy(
-        this.templatePath('src/styles/helpers/_boilerplate.scss'),
-        this.destinationPath('src/styles/helpers/_boilerplate.scss')
-      );
-
-      this.fs.copy(
         this.templatePath('src/styles/helpers/_breakpoints.scss'),
         this.destinationPath('src/styles/helpers/_breakpoints.scss')
-      );
-
-      this.fs.copy(
-        this.templatePath('src/styles/helpers/_normalize.scss'),
-        this.destinationPath('src/styles/helpers/_normalize.scss')
       );
 
       this.fs.copy(
