@@ -12,6 +12,7 @@ Watch this demo page for an example and more info:
 -	Build process with [Gulp](http://gulpjs.com) for html, css, javascript and images
 -	Deploy task for [Github Pages](https://pages.github.com)
 -	Pretty styled and customizable demo page with [initialize.css](http://jeroenoomsnl.github.io/initialize-css/)
+-	The [Yeoman](http://yeoman.io) generator makes it easy to install</li>
 -	And lots of best practices
 
 ## Installation
