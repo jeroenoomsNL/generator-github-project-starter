@@ -21,7 +21,7 @@
     "rimraf": "^2.5.0"
   },
   "dependencies": {
-    "initialize-css": "^0.2.1"
+    "initialize-css": "^0.4.0"
   },
   "license": "MIT",
   "engines": {
